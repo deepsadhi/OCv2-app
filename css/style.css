@@ -455,6 +455,60 @@ img.blackberry{
 	background:rgba(51, 51, 51, .7);
 }
 
+/*About Section Styles */
+#contributers{
+	overflow:hidden;
+	margin:10px 0;
+}
+
+#names{
+	float:left;
+	width:75%;
+}
+
+#names ul{
+	overflow:hidden;
+}
+
+#names li{
+	float:left;
+}
+
+#names li a{
+	height:100%;
+	display:block;
+	padding:10px;
+	transition:background .5s, color .5s;
+}
+
+#names li a:hover{
+	background:#3498DB;
+	color:#fff;
+	transition:background .5s, color .5s;
+}
+
+#contact-us{
+	float:left;
+	width:25%;
+	display:block;
+	background:rgba(219, 237, 249, 0.9);
+	color:#333;
+	height:100%;
+}
+
+#contact-us a{
+	display:block;
+	transition:background .5s, color .5s;
+	padding:10px;
+}
+
+#contact-us a:hover{
+	background:#3498DB;
+	color:#fff;
+	transition:background .5s, color .5s;
+	height:100%;
+}
+
 @media (max-width : 768px){
 }
 
