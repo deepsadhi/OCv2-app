@@ -391,7 +391,6 @@ h2.header{
 	width:14.313em;
 	width:24.35%;
 	margin-right:.83333%;
-	transition:background .5s, color .5s;
 }
 
 a.button{
@@ -400,7 +399,6 @@ a.button{
 
 .button:hover{
 	color:#fff;
-	transition:background .5s, color .5s;
 }
 
 .button img{
@@ -448,11 +446,9 @@ a.button{
 	height:50px;
 	margin:0 5px;
 	border:1px solid #ccc;
-	transition:all .5s;
 }
 
 #downloads img:hover{
-	transition:all .5s;
 }
 
 img.lpg{
@@ -561,12 +557,27 @@ img.blackberry{
 	}
 }
 
-@media (max-width:320px){
-	.button{
+@media (max-width:320px){	.button{
 		display:block;
 		width:100%;
 		margin-right:0;
 		margin-left:0;
+		float:none;
+	}
+	
+	#names{
+		float:none;
+		width:100%;
+	}
+	
+	#names li{
+		width:100%;
+		float:none;
+		display:block;
+	}
+	
+	#contact-us{
+		width:100%;
 		float:none;
 	}
 }
