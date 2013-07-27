@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Oil Price Comparison</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script type="text/javascript" src="js/jquery182min.js"></script>
+		<script type="text/javascript" src="js/spin.js"></script>
+		<script src="js/highstock.js"></script>
+		<script src="js/exporting.js"></script>
+		<script src="js/chart.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				init();
+			});
+		</script>
+	</head>
+<body>
+<div id="msg"></div>
+<header id="header">
+	<div class="wrapper">
+		<div id="logo"><img src="images/logo.png" alt="Oil Price Comparison"></div>
+		<nav id="navigation" role="navigation">
+				<a href="#" class="active"><span>Home<span></a>
+				<a href="#downloads">Apps</a>
+				<a href="#about">About</a>
+		</nav>
+	</div>
+</header>
+<div id="main-content">
+	<div class="wrapper">
+		<div id="container" style="">
+			<div id="loading">
+				<div id="loader"></div>
+				<div id="message">
+				</div>
+				
+			</div>
+		</div>
+		<script>
+			spin();
+			document.getElementById('message').innerHTML = '<span class="bold">Graph does not load?</span><span class="reload">Check javascript settings or Switch to compatible browser</span>';
+		</script>
+		<div id="controls">
+			<p>
+			<input type="checkbox" id="option6" name="np-lpgas" onchange="compare()">
+				<label for="option6"><span></span>NP: LP Gas</label>
+			<p>
+
+			<input type="checkbox" id="option0" name="np-petrol" onchange="compare()">
+				<label for="option0"><span></span>NP: Petrol</label>
+			<p>
+			
+			<input type="checkbox" id="option2" name="np-diesel" onchange="compare()">
+				<label for="option2"><span></span>NP: Diesel</label>
+			<p>
+			
+
+			<input type="checkbox" id="option4" name="np-kerosene" onchange="compare()">
+				<label for="option4"><span></span>NP Kerosene</label>
+			<p>
+			
+			<input type="checkbox" id="option3" name="in-diesel" onchange="compare()">
+				<label for="option3"><span></span>IN: Diesel</label>
+			<p>
+			
+			<input type="checkbox" id="option1" name="in-petrol" onchange="compare()">
+				<label for="option1"><span></span>IN: Petrol</label>
+			<p>
+			
+			<input type="checkbox" id="option5" name="in-kerosene" onchange="compare()">
+				<label for="option5"><span></span>IN: Kerosene</label>
+			<p>			
+
+		</div>
+		<div style="clear:both;"></div>
+		<div id="click-buttons">
+			<a class="button petrol" href="javascript:compare([2,3])">
+				<img class="petrol" src="images/fuel.png"/>
+				<div class="info">Diesel</div>
+			</a>
+			<a class="button kerosene" href="javascript:compare([4,5])">
+				<img class="kerosene" src="images/lantern.png"/>
+				<div class="info">Kerosene</div>
+			</a>
+			<a class="button lpg" href="javascript:compare([6])">
+				<img class="lpg" src="images/lpg.png"/>
+				<div class="info">LP Gas</div>
+			</a>
+			<a class="button petrol" href="javascript:compare([0,1])">
+				<img class="petrol" src="images/fuel.png"/>
+				<div class="info">Petrol</div>
+			</a>
+			<a class="button nepal" href="javascript:compare([0,2,4])">
+				<img class="nepal" src="images/nepal.png"/>
+				<div class="info">Nepal</div>
+			</a>
+			<a class="button india" href="javascript:compare([1,3,5])">
+				<img class="india" src="images/india.png"/>
+				<div class="info">India</div>
+			</a>
+		</div>
+		<div style="clear:both;"></div>
+		<div id="downloads">
+			<h2 class="header">Apps Download</h1>
+			<a href="#" target="_blank"><img class="android" src="images/android.png"/></a>
+			<a href="#" target="_blank"><img class="windows" src="images/windows.png"/></a>
+			<a href="#" target="_blank"><img class="symbian" src="images/symbian.png"/></a>
+			<a href="#" target="_blank"><img class="blackberry" src="images/blackberry.png"/></a>
+			<div style="clear:both;"></div> 
+		</div>
+		<div style="clear:both"></div>
+		<div id="about">
+			<h2 class="header">About</h1>
+			Oil Price Comparision is an app designed to compare the prices of petroleum products (Petrol, Diesel, Kerosene and LPG gas) between Nepal and India (Delhi).
+    
+			<div id="contributers">
+				<div id="names">
+					<ul>
+						<li><a target="_blank" href="http://about.me/mishraashmita" >Ashmita</a></li>
+						<li><a target="_blank" href="http://about.me/ayushmaharjan">Ayush</a></li>
+						<li><a target="_blank" href="http://about.me/deepsadhi">Deepak</a></li>
+						<li><a target="_blank" href="http://about.me/kshitiztiwari">Kshitiz</a></li>
+						<li><a target="_blank" href="http://about.me/manisapanta">Manisa</a></li>
+					</ul>
+				</div>
+				<div id="contact-us">
+					<a href="https://docs.google.com/forms/d/1bb0juZ34QkSG7zBhnDjhMqDLh3GTNHWObJE8dbypqLw/viewform" target="_blank">Contact Us</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
