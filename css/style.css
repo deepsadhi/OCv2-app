@@ -477,13 +477,13 @@ img.blackberry{
 	height:100%;
 	display:block;
 	padding:10px;
-	transition:background .5s, color .5s;
+	/* transition:background .5s, color .5s; */
 }
 
 #names li a:hover{
 	background:#3498DB;
 	color:#fff;
-	transition:background .5s, color .5s;
+	/* transition:background .5s, color .5s; */
 }
 
 #contact-us{
@@ -497,14 +497,14 @@ img.blackberry{
 
 #contact-us a{
 	display:block;
-	transition:background .5s, color .5s;
+	/* transition:background .5s, color .5s; */
 	padding:10px;
 }
 
 #contact-us a:hover{
 	background:#3498DB;
 	color:#fff;
-	transition:background .5s, color .5s;
+	/* transition:background .5s, color .5s; */
 	height:100%;
 }
 
