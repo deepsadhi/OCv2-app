@@ -1,3 +1,4 @@
+/*Reset Styles */
 html, body, div, span, 
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, img, small, strike, strong, sub, sup, tt, var,
@@ -15,11 +16,11 @@ menu, nav, section{
 	vertical-align: baseline;
 }
 
+/* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-
 body {
 	line-height: 1;
 	-webkit-font-smoothing: antialiased;
@@ -76,17 +77,11 @@ a{
     width:device-width;
 }
 
+/*Body Styles */
 body{
 	background:#fcfcfc;
 	font-family:'Gudea', Arial;
 	color:#333;
-}
-
-@font-face {
-  font-family: 'Gudea';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Gudea'), url(../fonts/gudea.woff) format('woff');
 }
 
 a, a:link, a:visited{
@@ -94,6 +89,7 @@ a, a:link, a:visited{
 	text-decoration:none;
 }
 
+/*Wrapper Style */
 .wrapper{
 	margin:0 auto;
 	width:960px;
@@ -101,7 +97,6 @@ a, a:link, a:visited{
 }
 
 /*Header Styles */
-
 header{
 	background:#ecf0f1;
 	background:rgba(219,237,249, .9);
@@ -118,14 +113,6 @@ header{
 	float:left;
 }
 
-/*Navigation Styles */
-
-
-#header{
-	height:100px;
-}
-
-
 #header{
 	height:65px;
 	position:fixed;
@@ -137,12 +124,12 @@ header{
 }
 
 #header #logo img{
-	background:#C0C0C0;
 	background:#3498db;
 	height:70px;
 	opacity:1;
 }
 
+/*Navigation Styles */
 #navigation{
 	float:right;
 	text-transform:uppercase;
@@ -160,20 +147,15 @@ header{
 }
 
 #header #navigation a:hover{
-}
-
-
-#navigation a:hover{
 	background:#3498db;
 	color:#fff;
 }
 
-#navigation a.active{
+#header #navigation a.active{
 	position:relative;
 	background:#3498db;
 	color:#fff;
 }
-
 
 /*Main Body */
 #main-content{
@@ -191,13 +173,14 @@ header{
 	background:#fff;
 	border:1px solid #ccc;
 	float:left;
-	width:710px;
+	width:73.95833%;
 	max-width:100%;
 	margin:0 10px 10px 0;
 	overflow:auto;
 	min-height:400px;
 }
 
+/*Styles for loading*/
 #loading{
 	width:100%;
 }
@@ -209,65 +192,67 @@ header{
 	color:#333;
 }
 
-#loading #message{
-	position:relative;
-	width:70%;
-	margin:0 auto;
-	text-align:center;
-	color:#ccc;
-}
+	#loading #message{
+		position:relative;
+		width:70%;
+		margin:0 auto;
+		text-align:center;
+		color:#ccc;
+	}
 
-.bold{
-	font-size:18px;
-	display: block;
-	font-size: 23px;
-}
+	#loading #message ul{
+		list-style:disc;
+		margin:10px 0;
+	}
 
-.reload{
-	color:#CCE5F6;
-	display: block;
-	font-size: 20px;
-	margin-top: 8px;
-}
+	#loader{
+		height:250px;
+		margin:0;
+	}
 
-#loading #message ul{
-	list-style:disc;
-	margin:10px 0;
-}
+	#msg{
+	}
 
-#loader{
-	height:250px;
-	margin:0;
-}
+	.msg-style{
+		background:#EA6153;
+		color:#E6E4E2;
+		position:fixed;
+		width:100%;
+		z-index:1000;
+	}
 
-#msg{
-}
+	.bold{
+		font-size:18px;
+		display: block;
+		font-size: 23px;
+	}
 
-.msg-style{
-	background:#EA6153;
-	color:#fff;
-	position:fixed;
-	width:100%;
-	z-index:1000;
-}
+	.reload{
+		color:#CCE5F6;
+		display: block;
+		font-size: 20px;
+		margin-top: 8px;
+	}
 
-#msg-body{
-	margin:0 auto;
-	padding:10px;
-	width:960px;
-	max-width:100%;
-}
+	#msg-body{
+		margin:0 auto;
+		padding:10px;
+		width:960px;
+		max-width:100%;
+	}
 
-#msg-body a{
-	padding:0 3px;
-}
+	#msg-body a{
+		padding:0 3px;
+		color:#fff;
+	}
 
-#msg-body a:hover{
-	text-decoration:underline;
-}
+	#msg-body a:hover{
+		text-decoration:underline;
+	}
 
+/*Controls Styling */
 #controls{
-	width:220px;
+	width:22.9166%;
 	background:#fff;
 	max-width:100%;
 	float:left;
@@ -325,55 +310,7 @@ h2.header{
 	background:#ecf0f1;
 }
 
-#contributers{
-	overflow:hidden;
-	margin:10px 0;
-}
-
-#names{
-	float:left;
-	width:75%;
-}
-
-#names ul{
-	overflow:hidden;
-}
-
-#names li{
-	float:left;
-}
-
-#names li a{
-	height:100%;
-	display:block;
-	padding:10px;
-}
-
-#names li a:hover{
-	background:#3498DB;
-	color:#fff;
-}
-
-#contact-us{
-	float:left;
-	width:25%;
-	display:block;
-	background:rgba(219, 237, 249, 0.9);
-	color:#333;
-	height:100%;
-}
-
-#contact-us a{
-	display:block;
-	padding:10px;
-}
-
-#contact-us a:hover{
-	background:#3498DB;
-	color:#fff;
-	height:100%;
-}
-
+/*Button Styles */
 #click-buttons{
 	overflow:hidden;
 }
@@ -557,7 +494,8 @@ img.blackberry{
 	}
 }
 
-@media (max-width:320px){	.button{
+@media (max-width:320px){
+	.button{
 		display:block;
 		width:100%;
 		margin-right:0;

@@ -20,6 +20,7 @@ function init(){
 	});
 }
 
+/*Spinner Animation */
 function spin(){
 	document.getElementById('container').innerHTML = '<div id=loading><div id="loader"></div><div id="message"></div></div>';
 	var opts = {
@@ -44,7 +45,7 @@ function spin(){
 	var spinner = new Spinner(opts).spin(target);
 }
 
-
+/*Header Scroll Animation */
 function header(){
 	var link_select = $('#navigation a[href^="#"]');	//Selects all 'href' attributes with the initial string '#'
 	var prev_class = link_select;	//Sets the current class as previous class for the next click event
@@ -124,16 +125,13 @@ function chart(petroleumProduct){
 				'#d35400',
 				'#8e44ad',
 				'#2c3e50',
-				'#34495e',
+				'#7f8c8d',
 				'#E8601C'
 			],
 			
 			legend: {
 				enabled: true,
-				//align: 'right',
-				//layout: 'horizontal',
 				verticalAlign: 'bottom',
-				//y: 100,
 				borderWidth: 0
 			},
 			
