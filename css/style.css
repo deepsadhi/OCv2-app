@@ -489,6 +489,7 @@ img.blackberry{
 	height:100%;
 	display:block;
 	padding:10px;
+	text-align:center;
 	/* transition:background .5s, color .5s; */
 }
 
