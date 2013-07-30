@@ -77,18 +77,23 @@ a{
     width:device-width;
 }
 
+/*Font face declaration */
+@font-face {
+    font-family: 'Gudea';
+    src: url('../fonts/gudea.eot');
+    src: url('../fonts/gudea.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gudea.woff') format('woff'),
+         url('../fonts/gudea.ttf') format('truetype'),
+         url('../fonts/gudea.svg#gudearegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /*Body Styles */
 body{
 	background:#fcfcfc;
 	font-family:'Gudea', Arial;
 	color:#333;
-}
-
-@font-face {
-	font-family: 'Gudea';
-	font-style: normal;
-	font-weight: 400;
-	src: local('Gudea'), url(../fonts/gudea.woff) format('woff');
 }
 
 a, a:link, a:visited{
@@ -124,6 +129,7 @@ header{
 	height:65px;
 	position:fixed;
 	width:100%;
+	z-index:600;
 }
 
 #header #logo{
@@ -190,6 +196,8 @@ header{
 /*Styles for loading*/
 #loading{
 	width:100%;
+	position:relative;
+	z-index:400;
 }
 
 #loading #title{
@@ -215,6 +223,10 @@ header{
 	#loader{
 		height:250px;
 		margin:0;
+	}
+	
+	#loader .spinner{
+		margin:0 auto;
 	}
 
 	#msg{
