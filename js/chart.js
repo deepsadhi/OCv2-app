@@ -1,7 +1,7 @@
 function init(){
 	header();
 	compare([4,5]);
-	$.getJSON('logs/msg.json', 	function(data) {
+	$.getJSON('http://apps.opendatanepal.org/hackathon/oil-price-comparison/logs/msg.json', 	function(data) {
 		if (data != ""){
 			data = "<div id=\"msg-body\">" + data + "</div>";
 			$("#msg").html(data);
@@ -22,7 +22,7 @@ function init(){
 
 /*Spinner Animation */
 function spin(){
-	document.getElementById('container').innerHTML = '<div id=loading><div id="loader"></div><div id="message"></div></div>';
+	document.getElementById('container').innerHTML = '<div id="loading"><div id="loader"></div><div id="message"></div></div>';
 	var opts = {
 		lines: 9, // The number of lines to draw
 		length: 0, // The length of each line
@@ -78,7 +78,7 @@ function chart(petroleumProduct){
 	$.each(names, function(i, name) {
 		id = name.replace(': ','_');
 		id = id.replace(' ', '');
-		$.getJSON('json.php?getData='+ id.toLowerCase())
+		$.getJSON('http://apps.opendatanepal.org/hackathon/oil-price-comparison/json.php?getData='+ id.toLowerCase())
 		.done(function(data) {
 			seriesOptions[i] = {
 				name: name,
@@ -92,12 +92,7 @@ function chart(petroleumProduct){
 			}
 		})
 		.fail(function(jqXHR, textStatus) {
-			var online = navigator.onLine;
-			if(online){
-				$('#message').html('<span class="bold">'+textStatus+'! Packet lost</span><span class="reload">Try reloading the app or check again later</span>');
-			}else{
-				$('#message').html('<span class="bold">No net acess :(</span><span class="reload">Check your internet settings</span>');
-			}
+			$('#message').html('<span class="bold">'+textStatus+'! Unable to load chart</span><span class="reload">Internet connection lost OR Internal error</span>');
 		});
 	});
 
