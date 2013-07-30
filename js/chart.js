@@ -1,7 +1,8 @@
 function init(){
 	header();
 	compare([4,5]);
-	$.getJSON('logs/msg.json', 	function(data) {
+	$.getJSON('https://dl.dropboxusercontent.com/u/15246667/msg.json', 	function(data) {
+//	$.getJSON('logs/msg.json', 	function(data) {
 		if (data != ""){
 			data = "<div id=\"msg-body\">" + data + "</div>";
 			$("#msg").html(data);
