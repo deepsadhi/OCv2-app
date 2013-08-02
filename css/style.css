@@ -149,7 +149,7 @@ header{
 	height:65px;
 	overflow:hidden;
 	position:relative;
-	margin-right:20px;
+	margin-right:10px;
 }
 
 #header #navigation a{
@@ -270,7 +270,7 @@ header{
 
 /*Controls Styling */
 #controls{
-	width:22.9166%;
+	width:24.98%;
 	background:#fff;
 	max-width:100%;
 	float:left;
