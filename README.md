@@ -20,4 +20,4 @@ CONTRIBUTORS:
 
 CONTACT US:
 -----------
-[Send message](https://docs.google.com/forms/d/1bb0juZ34QkSG7zBhnDjhMqDLh3GTNHWObJE8dbypqLw/viewform)
+[mail@bctians.com](mail@bctians.com)
