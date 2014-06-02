@@ -1,7 +1,7 @@
 function init(){
 	header();
 	compare([4,5]);
-	$.getJSON('http://apps.opendatanepal.org/hackathon/oil-price-comparison/logs/msg.json', 	function(data) {
+	$.getJSON('http://apps.opennepal.net/oil-price-comparison/logs/msg.json', 	function(data) {
 		if (data != ""){
 			data = "<div id=\"msg-body\">" + data + "</div>";
 			$("#msg").html(data);
@@ -78,7 +78,7 @@ function chart(petroleumProduct){
 	$.each(names, function(i, name) {
 		id = name.replace(': ','_');
 		id = id.replace(' ', '');
-		$.getJSON('http://apps.opendatanepal.org/hackathon/oil-price-comparison/json.php?getData='+ id.toLowerCase())
+		$.getJSON('http://apps.opennepal.net/oil-price-comparison/json.php?getData='+ id.toLowerCase())
 		.done(function(data) {
 			seriesOptions[i] = {
 				name: name,
