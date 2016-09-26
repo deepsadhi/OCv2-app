@@ -13,12 +13,12 @@ CONTRIBUTORS:
 -------------
 * [Ashmita](http://about.me/mishraashmita)
 * [Ayush](http://about.me/ayushmaharjan)
-* [Deepak](http://about.me/deepsadhi)
+* [Deepak](http://about.me/deepsadhi){:target="_blank"}
 * [Kshitiz](http://about.me/kshitiztiwari)
 * [Manisha](http://about.me/manisapanta)
 
 
 CONTACT US:
 -----------
-[mail@bctians.com](mail@bctians.com){:target="_blank"}
+[mail@bctians.com](mail@bctians.com)
 
