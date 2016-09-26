@@ -13,7 +13,7 @@ CONTRIBUTORS:
 -------------
 * [Ashmita](http://about.me/mishraashmita)
 * [Ayush](http://about.me/ayushmaharjan)
-* [Deepak](http://about.me/deepsadhi){:target="_blank"}
+* [Deepak](http://about.me/deepsadhi)
 * [Kshitiz](http://about.me/kshitiztiwari)
 * [Manisha](http://about.me/manisapanta)
 
